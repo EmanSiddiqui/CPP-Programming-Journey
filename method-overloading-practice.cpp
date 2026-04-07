@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+class overload{
+	public:
+		void func(int x){
+			cout<<"value of x is "<<x<<endl;
+		}
+		void func(double x){
+			cout<<"value of x is "<<x<<endl;
+		}
+		void func(int x , int y){
+			cout<<"value of x and y is "<<x<<","<<y<<endl;
+		}
+};
+
+int main(){
+
+overload obj1;
+obj1.func(7);
+obj1.func(9.123);
+obj1.func(85,90);
+
+
+return 0;
+}
