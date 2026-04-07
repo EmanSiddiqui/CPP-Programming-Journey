@@ -13,6 +13,11 @@ class Rectangle{
 				length=l;
 				width=w;
 			}
+			Rectangle(const Rectangle &obj){
+				length=obj.length;
+				width=obj.width;
+			}
+			
 			
 			void setLength(float l){
 				length=l;
@@ -36,11 +41,11 @@ class Rectangle{
 
 int main(){
 
-Rectangle r(2.5,6.8);
-r.display();
+Rectangle r1(2.5,6.8);
+r1.display();
 
-r.setLength(2.9);
-r.display();
+Rectangle r2=r1;
+r2.display();
 
 
 
